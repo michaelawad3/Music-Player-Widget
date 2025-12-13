@@ -1,0 +1,183 @@
+body {
+  /* display: flex; 
+  flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: sans-serif;
+  margin: 0;
+  overflow: hidden
+}
+
+button {
+  border: none;
+  background: transparent;
+  padding: 3px;
+  width: 35px;
+  height: 35px;
+}
+
+button:hover {
+  opacity: 0.5;
+}
+
+button img {
+  background-color: #fff; /* or match your app's theme */
+  border-radius: 100%;    /* optional: round icons */
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.track-info {
+  text-align: center;
+  min-height: 80px; 
+}
+
+.track-info h1,
+.track-info h2 {
+  text-align: center;
+  min-height: 1.5em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 1;
+  will-change: transform, opacity;
+}
+
+.track-info h1 {
+  font-size: 24px;
+  margin: 0;
+  color: rgb(177, 177, 177);
+}
+
+.track-info h2 {
+  font-size: 18px;
+  margin: 4px 0 4px 0;
+  color: rgb(75, 74, 74);
+}
+
+#album-cover {
+  display: block;      
+  margin: 0 auto;
+  width: 120px;
+  height: 120px;
+  align-items: center;
+  border-radius: 20px;
+  object-fit: fill;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  /* animation: spin 10s linear infinite; */
+}
+
+/* @keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} */
+
+/* .volume-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 10px;
+  width: 150px;
+}
+
+#volume-slider {
+  position: relative;
+  width: 0;
+  opacity: 0;
+  transition: width 0.3s ease, opacity 0.3s ease;
+  overflow: hidden;
+  height: 4px;
+  border-radius: 2px;
+  appearance: none;
+  background: #ccc;
+  transform: rotate(270deg);
+}
+
+.volume-container:hover #volume-slider {
+  width: 100px;
+  opacity: 1;
+}
+
+#volume-button {
+  background: transparent;
+  border: none;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+}
+
+#volume-button img {
+  width: 100%;
+  height: 100%;
+} */
+
+.title-wrapper {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  margin: 0 auto;
+  color: white;
+  
+}
+
+/* .scrolling-text {
+  display: inline-block; 
+  padding-left: 100%; 
+  animation: scroll-text 5s linear infinite;
+} */
+
+/* Animation */
+/* @keyframes scroll-text {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+} */
+
+
+
+#save{
+  height: 5px;
+  width: 5px;
+}
+
+.progress-container {
+  width: 150px;
+  height: 6px;
+  background-color: #555;
+  border-radius: 3px;
+  overflow: hidden;
+  margin: 10px auto;
+}
+
+.progress-container:hover {
+  cursor: pointer;
+  transform: scale(1.04);
+  box-shadow: 0 4px 12px rgba(255, 0, 0, 0.4);
+}
+
+#progress-bar {
+  height: 100%;
+  width: 0%;
+  background-color: white; 
+  transition: width 0.3s linear;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  position: static;
+  overflow: hidden
+}
