@@ -74,6 +74,7 @@ A window will open and prompt you to log in to Spotify via your browser. After a
 ---
 
 ## 📁 Project Structure
+```
 Music-Player-Widget/
 ├── images/              # UI icons (play, pause, previous, next, default album art)
 ├── index.html           # Widget UI layout
@@ -83,6 +84,7 @@ Music-Player-Widget/
 ├── preload.js           # Electron preload script (context bridge)
 ├── package.json         # Project metadata & scripts
 └── .gitignore
+```
 
 ---
 
